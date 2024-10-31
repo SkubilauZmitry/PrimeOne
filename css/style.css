@@ -108,7 +108,7 @@ h6 {
 }
 
 [class*=__container] {
-  max-width: 75rem;
+  max-width: 51.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
@@ -116,7 +116,7 @@ h6 {
 [class*="--gc"] {
   display: grid;
   min-width: 0;
-  grid-template-columns: 0.9375rem 1fr minmax(auto, 73.125rem) 1fr 0.9375rem;
+  grid-template-columns: 0.9375rem 1fr minmax(auto, 50rem) 1fr 0.9375rem;
 }
 [class*="--gc"] > * {
   min-width: 0;

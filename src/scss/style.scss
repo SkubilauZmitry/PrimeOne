@@ -7,7 +7,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
-$mw: 800;
+
 // Підключити, якщо є локальні файли шрифтів
 // @import "fonts/fonts";
 
@@ -36,7 +36,7 @@ $minWidth: 320;
 // Ширина полотна (макету)
 $maxWidth: 1920;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 1170;
+$maxWidthContainer: 800;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
 $containerPadding: 30;

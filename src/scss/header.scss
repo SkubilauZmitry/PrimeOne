@@ -1,23 +1,52 @@
 /*HEADER*/
-.header {
-    // display: flex;
-    background-color: #2c93b6;
-    padding: 32px 0px 32px 0px;
 
-    &__container {
-        background-color: #f3e58b;
-    }
+.header {
+    padding: 32px 0px 32px 0px;
 }
+/*HEADER-TOP*/
 .header-top {
     display: flex;
     justify-content: space-between;
     &__link {
         font-size: 15px;
         font-family: "'Akzidenz-Grotesk-BQ";
-
         text-transform: uppercase;
         line-height: 1.667;
         text-decoration: underline;
+
+        &:hover {
+            color: rgb(255, 255, 255);
+            background: #000;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+    @media (max-width: $mobile) {
+        justify-content: end;
+    }
+    @media (max-width: 450px) {
+        margin: 0px 0px 50px 0px;
+    }
+}
+
+.haeder-top-lang {
+    &__item {
+        font-size: 12px;
+        font-family: "Bebas";
+        text-transform: uppercase;
+        margin: 5px 35px 0px 0px;
+        &:hover {
+            color: rgb(255, 255, 255);
+            background: #000;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+.header-top-lang-menu {
+    &__item-menu {
+        font-size: 12px;
+        font-family: "Bebas";
+        margin: 15px 10px 0px 0px;
+        text-transform: uppercase;
         &:hover {
             color: rgb(255, 255, 255);
             background: #000;
@@ -26,33 +55,41 @@
     }
 }
 .header-top-lang {
-}
-.haeder-top-lang {
-    &__item {
-        font-size: 10px;
-        font-family: "Bebas";
-        // color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        &:hover {
-            color: rgb(255, 255, 255);
-            background: #000;
-            transition: all 0.1s ease-in-out;
-        }
+    @media (max-width: $mobile) {
+        display: none;
     }
 }
+.header-top-lang-menu {
+    @media (min-width: $mobile) {
+        display: none;
+    }
+}
+
+/*HEADER-BOTTOM*/
+
 .header-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: -20px 0px 0px 0px;
     &__column {
+        flex: 1 1 50%;
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
-
-    &__menu {
+    &__column-center {
+        flex: 1 1 50%;
+        @media (max-width: $mobile) {
+            flex: 0 1 40%;
+            justify-content: center;
+            margin: 0px auto;
+        }
     }
 
     &__list {
         display: flex;
+        justify-content: space-between;
     }
 
     &__link {
@@ -61,6 +98,15 @@
         color: rgb(0, 0, 0);
         text-transform: uppercase;
         line-height: 1.667;
+        margin: 0px 10px 0px 0px;
+    }
+    &__link_right-- {
+        font-size: 15px;
+        font-family: "'Akzidenz-Grotesk-BQ";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.667;
+        margin: 0px 0px 0px 20px;
     }
 
     &__logo {
@@ -69,9 +115,55 @@
     }
 
     &__logo-img {
-        margin: 12px 0px 12px 0px;
+        max-width: 80%;
+        margin: 0px auto;
     }
     &__logo-text {
+        margin: 0px auto;
+    }
+}
+
+.header-bottom-menu {
+    display: flex;
+    &__list-menu {
+        padding: 40px 0px 0px 0px;
+        font-size: 18px;
+        font-family: "'Akzidenz-Grotesk-BQ";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.667;
+        flex-direction: column;
+        @media (min-width: $mobile) {
+            display: none;
+        }
+    }
+}
+.header-bottom-menu {
+    &__column-menu {
+        flex: 0 1 50%;
+    }
+    &__column-center-menu {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 40%;
+        justify-content: center;
+        @media (min-width: $mobile) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 0px 5px;
+    }
+
+    &__logo-text {
+        margin: 0px auto;
+    }
+
+    &__logo-img {
+        max-width: 80%;
         margin: 0px auto;
     }
 }

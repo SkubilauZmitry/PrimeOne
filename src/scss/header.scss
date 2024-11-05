@@ -1,0 +1,77 @@
+/*HEADER*/
+.header {
+    // display: flex;
+    background-color: #2c93b6;
+    padding: 32px 0px 32px 0px;
+
+    &__container {
+        background-color: #f3e58b;
+    }
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        font-size: 15px;
+        font-family: "'Akzidenz-Grotesk-BQ";
+
+        text-transform: uppercase;
+        line-height: 1.667;
+        text-decoration: underline;
+        &:hover {
+            color: rgb(255, 255, 255);
+            background: #000;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+.header-top-lang {
+}
+.haeder-top-lang {
+    &__item {
+        font-size: 10px;
+        font-family: "Bebas";
+        // color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        &:hover {
+            color: rgb(255, 255, 255);
+            background: #000;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -20px 0px 0px 0px;
+    &__column {
+    }
+
+    &__menu {
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        font-size: 15px;
+        font-family: "'Akzidenz-Grotesk-BQ";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.667;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo-img {
+        margin: 12px 0px 12px 0px;
+    }
+    &__logo-text {
+        margin: 0px auto;
+    }
+}

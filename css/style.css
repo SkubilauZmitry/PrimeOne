@@ -149,3 +149,11 @@ h6 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+/*HEADER*/
+.header {
+  background-color: #2c93b6;
+}
+.header__container {
+  background-color: #f3e58b;
+}

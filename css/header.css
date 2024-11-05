@@ -1,0 +1,63 @@
+/*HEADER*/
+.header {
+  background-color: #2c93b6;
+  padding: 32px 0px 32px 0px;
+}
+.header__container {
+  background-color: #f3e58b;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top__link {
+  font-size: 15px;
+  font-family: "'Akzidenz-Grotesk-BQ";
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-decoration: underline;
+}
+.header-top__link:hover {
+  color: rgb(255, 255, 255);
+  background: #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.haeder-top-lang__item {
+  font-size: 10px;
+  font-family: "Bebas";
+  text-transform: uppercase;
+}
+.haeder-top-lang__item:hover {
+  color: rgb(255, 255, 255);
+  background: #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -20px 0px 0px 0px;
+}
+.header-bottom__list {
+  display: flex;
+}
+.header-bottom__link {
+  font-size: 15px;
+  font-family: "'Akzidenz-Grotesk-BQ";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.667;
+}
+.header-bottom__logo {
+  display: flex;
+  flex-direction: column;
+}
+.header-bottom__logo-img {
+  margin: 12px 0px 12px 0px;
+}
+.header-bottom__logo-text {
+  margin: 0px auto;
+}

@@ -1,15 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <!-- Slider -->
+        <div class="slider">
+          <div class="slider__row">
+            <!-- Slider-img -->
+            <div class="slider__image">
+              <img
+                src="@img/Slider/slider.png"
+                alt="Image"
+                class="slider__img ibg"
+              />
+            </div>
+            <!-- SLider-body -->
+            <div class="slider__body">
+              <div class="slider__contaner-body">
+                <h2 class="slider__title">Private catering</h2>
+                <div class="slider__text">
+                  Treat your guests to a beautifully plated dinner, hand-crafted
+                  canapes or a casual BBQ.
+                </div>
+                <div class="slider__box">
+                  <button type="button" class="slider__button">
+                    <a href="#" class="slider__button-link">Get a quote</a>
+                  </button>
+                  <a href="#" class="slider__link">View menus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>

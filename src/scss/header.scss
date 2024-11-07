@@ -2,33 +2,39 @@
 
 .header {
     padding: 32px 0px 32px 0px;
+    @media (max-width: $mobile) {
+        padding-top: 50px;
+    }
 }
 /*HEADER-TOP*/
+.menu__icon {
+    @media (min-width: $mobile) {
+        display: block;
+    }
+    @media (max-width: $mobile) {
+    }
+}
 .header-top {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $mobile) {
+        margin: 0px 0px -60px 0px;
+    }
     &__link {
         font-size: 15px;
         font-family: "'Akzidenz-Grotesk-BQ";
         text-transform: uppercase;
         line-height: 1.667;
         text-decoration: underline;
-
-        &:hover {
-            color: rgb(255, 255, 255);
-            background: #000;
-            transition: all 0.1s ease-in-out;
-        }
     }
     @media (max-width: $mobile) {
-        justify-content: end;
-    }
-    @media (max-width: 450px) {
-        margin: 0px 0px 50px 0px;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
-.haeder-top-lang {
+.header-top-lang {
+    flex: 1 1 50%;
     &__item {
         font-size: 12px;
         font-family: "Bebas";
@@ -72,6 +78,8 @@
     justify-content: space-between;
     align-items: center;
     margin: -20px 0px 0px 0px;
+    @media (max-width: $mobile) {
+    }
     &__column {
         flex: 1 1 50%;
         @media (max-width: $mobile) {
@@ -80,11 +88,6 @@
     }
     &__column-center {
         flex: 1 1 50%;
-        @media (max-width: $mobile) {
-            flex: 0 1 40%;
-            justify-content: center;
-            margin: 0px auto;
-        }
     }
 
     &__list {
@@ -112,14 +115,28 @@
     &__logo {
         display: flex;
         flex-direction: column;
+        flex: 0 0 20%;
+        background-color: #d8ee16;
+        @media (max-width: 560px) {
+        }
     }
 
     &__logo-img {
-        max-width: 80%;
         margin: 0px auto;
+
+        @media (max-width: 560px) {
+            max-width: 40%;
+            justify-content: flex-start;
+            margin: 0px 0px 0px 40px;
+        }
     }
     &__logo-text {
         margin: 0px auto;
+        @media (max-width: 560px) {
+            max-width: 40%;
+            justify-content: flex-start;
+            margin: 0px 0px 0px 120px;
+        }
     }
 }
 

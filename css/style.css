@@ -238,6 +238,11 @@ h6 {
     padding-top: 50px;
   }
 }
+@media (max-width: 560px) {
+  .header {
+    padding: 10px 0px 10px 0px;
+  }
+}
 
 /*HEADER-TOP*/
 @media (min-width: 47.99875em) {
@@ -245,24 +250,21 @@ h6 {
     display: block;
   }
 }
-@media (max-width: 47.99875em) {
-  .menu__icon {
-    background-color: #df1313;
-  }
-}
-
 .header-top {
   display: flex;
   justify-content: space-between;
-  background: #7ad7e8;
 }
 @media (max-width: 47.99875em) {
   .header-top {
     margin: 0px 0px -60px 0px;
   }
 }
+@media (max-width: 560px) {
+  .header-top {
+    margin: 0px 0px 0px 0px;
+  }
+}
 .header-top__link {
-  background-color: #def640;
   font-size: 15px;
   font-family: "'Akzidenz-Grotesk-BQ";
   text-transform: uppercase;
@@ -356,9 +358,9 @@ h6 {
 .header-bottom__logo {
   display: flex;
   flex-direction: column;
+  flex: 0 0 20%;
 }
 .header-bottom__logo-img {
-  max-width: 80%;
   margin: 0px auto;
 }
 .header-bottom__logo-text {
@@ -399,8 +401,13 @@ h6 {
 }
 .header-bottom-menu__logo {
   display: flex;
-  flex-direction: column;
   padding: 0px 5px 0px 5px;
+  background-color: #e11111;
+}
+@media (max-width: 370px) {
+  .header-bottom-menu__logo {
+    flex: 0 1 33.333%;
+  }
 }
 .header-bottom-menu__logo-text {
   margin: 0px auto;

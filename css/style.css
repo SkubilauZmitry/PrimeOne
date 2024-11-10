@@ -109,7 +109,7 @@ h6 {
 }
 
 [class*=__container] {
-  max-width: 51.875rem;
+  max-width: 56.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
@@ -117,7 +117,7 @@ h6 {
 [class*="--gc"] {
   display: grid;
   min-width: 0;
-  grid-template-columns: 0.9375rem 1fr minmax(auto, 50rem) 1fr 0.9375rem;
+  grid-template-columns: 0.9375rem 1fr minmax(auto, 55rem) 1fr 0.9375rem;
 }
 [class*="--gc"] > * {
   min-width: 0;
@@ -250,6 +250,7 @@ h6 {
     display: block;
   }
 }
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -270,6 +271,11 @@ h6 {
   text-transform: uppercase;
   line-height: 1.667;
   text-decoration: underline;
+}
+@media (max-width: 370px) {
+  .header-top__link {
+    font-size: 12px;
+  }
 }
 @media (max-width: 47.99875em) {
   .header-top {
@@ -294,15 +300,20 @@ h6 {
 }
 
 .header-top-lang-menu__item-menu {
-  font-size: 12px;
+  font-size: 15px;
   font-family: "Bebas";
-  margin: 15px 10px 0px 0px;
+  margin: 45px 10px 0px 0px;
   text-transform: uppercase;
 }
 .header-top-lang-menu__item-menu:hover {
   color: rgb(255, 255, 255);
   background: #000;
   transition: all 0.1s ease-in-out;
+}
+@media (max-width: 29.99875em) {
+  .header-top-lang-menu__item-menu {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -363,6 +374,12 @@ h6 {
 .header-bottom__logo-img {
   margin: 0px auto;
 }
+@media (max-width: 370px) {
+  .header-bottom__logo-img {
+    max-width: 40%;
+    margin: 0px auto;
+  }
+}
 .header-bottom__logo-text {
   margin: 0px auto;
 }
@@ -384,6 +401,11 @@ h6 {
     display: none;
   }
 }
+@media (max-width: 29.99875em) {
+  .header-bottom-menu__list-menu {
+    font-size: 20px;
+  }
+}
 
 .header-bottom-menu__column-menu {
   flex: 0 1 50%;
@@ -399,15 +421,15 @@ h6 {
     display: none;
   }
 }
+@media (max-width: 29.99875em) {
+  .header-bottom-menu__column-center-menu {
+    display: none;
+  }
+}
 .header-bottom-menu__logo {
   display: flex;
+  flex-direction: column;
   padding: 0px 5px 0px 5px;
-  background-color: #e11111;
-}
-@media (max-width: 370px) {
-  .header-bottom-menu__logo {
-    flex: 0 1 33.333%;
-  }
 }
 .header-bottom-menu__logo-text {
   margin: 0px auto;
@@ -441,7 +463,7 @@ h6 {
 }
 .slider__title {
   font-size: 50px;
-  font-family: "AkzidenzGroteskBQ";
+  font-family: "Akzidenz-Grotesk-BQ";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1;
@@ -455,7 +477,6 @@ h6 {
 }
 .slider__text {
   font-size: 15px;
-  font-family: "PTSans";
   color: rgb(255, 255, 255);
   line-height: 1.667;
   margin: 0px 0px 50px 0px;
@@ -495,4 +516,56 @@ h6 {
   .slider__link {
     margin: 10px 0px 0px 5px;
   }
+}
+
+/*columns*/
+.columns-content {
+  padding: 75px 0px;
+}
+.columns-content__row {
+  display: flex;
+}
+.columns-content__body {
+  flex: 0 1 25%;
+  background-color: #19a2c4;
+}
+.columns-content__title {
+  font-size: 25px;
+  font-family: "Akzidenz-Grotesk-BQ";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 20px 0px 42px 0px;
+  background: #ed1c1c;
+  padding: 0px 5px 0px 0px;
+}
+.columns-content__text {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  line-height: 1.667;
+  background-color: #dbe11b;
+  padding: 0px 5px 0px 0px;
+}
+.columns-content__button {
+  font-size: 15px;
+  font-family: "Bebas";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.667;
+  background-color: #fab2b2;
+}
+.columns-content__button-link {
+  margin: 30px 0px 30px 0px;
+  background-color: #010101;
+  padding: 5px 5px 5px 5px;
+}
+.columns-content__link {
+  font-size: 15px;
+  font-family: "Bebas";
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 1.667;
+  margin: 0px 0px 81px 0px;
+  background: #8bb3b9;
 }

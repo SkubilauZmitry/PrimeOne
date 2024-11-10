@@ -36,7 +36,7 @@ $minWidth: 320;
 // Ширина полотна (макету)
 $maxWidth: 1920;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 800;
+$maxWidthContainer: 880;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
 $containerPadding: 30;
@@ -192,7 +192,7 @@ body {
 	}
 	&__title {
 		font-size: 50px;
-		font-family: "AkzidenzGroteskBQ";
+		font-family: "Akzidenz-Grotesk-BQ";
 		color: rgb(255, 255, 255);
 		text-transform: uppercase;
 		line-height: 1;
@@ -205,16 +205,12 @@ body {
 
 	&__text {
 		font-size: 15px;
-		font-family: "PTSans";
 		color: rgb(255, 255, 255);
 		line-height: 1.667;
 		margin: 0px 0px 50px 0px;
 		@media (max-width: $mobile) {
 			margin: 0px 0px 30px 0px;
 		}
-	}
-
-	&__box {
 	}
 
 	&__button {
@@ -244,4 +240,74 @@ body {
 			margin: 10px 0px 0px 5px;
 		}
 	}
+}
+
+/*columns*/
+
+.columns-content {
+	padding: 75px 0px;
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__body {
+		flex: 0 1 25%;
+		background-color: #19a2c4;
+	}
+
+	&__image {
+	}
+
+	&__img {
+	}
+
+	&__title {
+		font-size: 25px;
+		font-family: "Akzidenz-Grotesk-BQ";
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 20px 0px 42px 0px;
+		background: #ed1c1c;
+		padding: 0px 5px 0px 0px;
+	}
+
+	&__text {
+		font-size: 15px;
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+		background-color: #dbe11b;
+		padding: 0px 5px 0px 0px;
+	}
+
+	&__button {
+		font-size: 15px;
+		font-family: "Bebas";
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+		line-height: 1.667;
+		background-color: #fab2b2;
+	}
+
+	&__button-link {
+		margin: 30px 0px 30px 0px;
+		background-color: #010101;
+		padding: 5px 5px 5px 5px;
+	}
+
+	&__link {
+		font-size: 15px;
+		font-family: "Bebas";
+		color: rgb(0, 0, 0);
+		text-decoration: underline;
+		text-transform: uppercase;
+		line-height: 1.667;
+		margin: 0px 0px 81px 0px;
+		background: #8bb3b9;
+	}
+}
+.ibg {
 }

@@ -243,25 +243,33 @@ body {
 }
 
 /*columns*/
-
-.columns-content {
-	padding: 75px 0px;
+.columns {
+	padding: 75px 0px 80px 0px;
 	&__container {
+		@media (max-width: $mobile) {
+			max-width: 800px;
+			background-color: #a9d14b;
+		}
+	}
+
+	&__body {
 	}
 
 	&__row {
 		display: flex;
 	}
 
-	&__body {
+	&__column {
 		flex: 0 1 25%;
-		background-color: #19a2c4;
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__image {
-	}
-
-	&__img {
 	}
 
 	&__title {
@@ -271,16 +279,14 @@ body {
 		text-transform: uppercase;
 		line-height: 1;
 		margin: 20px 0px 42px 0px;
-		background: #ed1c1c;
 		padding: 0px 5px 0px 0px;
 	}
 
 	&__text {
 		font-size: 15px;
 		color: rgb(0, 0, 0);
-		line-height: 1.667;
-		background-color: #dbe11b;
 		padding: 0px 5px 0px 0px;
+		flex: 1 1 100%;
 	}
 
 	&__button {
@@ -289,7 +295,8 @@ body {
 		color: rgb(255, 255, 255);
 		text-transform: uppercase;
 		line-height: 1.667;
-		background-color: #fab2b2;
+		justify-content: flex-start;
+		display: flex;
 	}
 
 	&__button-link {
@@ -299,6 +306,7 @@ body {
 	}
 
 	&__link {
+		display: block;
 		font-size: 15px;
 		font-family: "Bebas";
 		color: rgb(0, 0, 0);
@@ -306,8 +314,5 @@ body {
 		text-transform: uppercase;
 		line-height: 1.667;
 		margin: 0px 0px 81px 0px;
-		background: #8bb3b9;
 	}
-}
-.ibg {
 }

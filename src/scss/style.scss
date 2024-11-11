@@ -244,32 +244,40 @@ body {
 
 /*columns*/
 .columns {
-	padding: 75px 0px 80px 0px;
+	padding: 75px 0px 40px 0px;
+	@media (max-width: $tablet) {
+		padding: 40px 0px 40px 0px;
+	}
+
 	&__container {
-		@media (max-width: $mobile) {
-			max-width: 800px;
-			background-color: #a9d14b;
-		}
 	}
 
 	&__body {
 	}
 
 	&__row {
-		display: flex;
 	}
 
 	&__column {
 		flex: 0 1 25%;
 		display: flex;
+		@media (max-width: $tablet) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
 		display: flex;
 		flex-direction: column;
+		@media (max-width: $tablet) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: 480px) {
+			flex: 1 1 100%;
+		}
 	}
 
-	&__image {
+	&__img {
 	}
 
 	&__title {
@@ -279,14 +287,21 @@ body {
 		text-transform: uppercase;
 		line-height: 1;
 		margin: 20px 0px 42px 0px;
-		padding: 0px 5px 0px 0px;
+		max-width: 170px;
+		@media (max-width: $mobile) {
+			margin: 10px 0px 20px 0px;
+		}
 	}
 
 	&__text {
 		font-size: 15px;
 		color: rgb(0, 0, 0);
-		padding: 0px 5px 0px 0px;
+		padding: 0px 10px 0px 0px;
 		flex: 1 1 100%;
+		max-width: 170px;
+		@media (max-width: $mobile) {
+			max-width: none;
+		}
 	}
 
 	&__button {
@@ -297,10 +312,11 @@ body {
 		line-height: 1.667;
 		justify-content: flex-start;
 		display: flex;
+		margin: 30px 0px 30px 0px;
+		margin: 15px 0px 15px 0px;
 	}
 
 	&__button-link {
-		margin: 30px 0px 30px 0px;
 		background-color: #010101;
 		padding: 5px 5px 5px 5px;
 	}
@@ -313,6 +329,9 @@ body {
 		text-decoration: underline;
 		text-transform: uppercase;
 		line-height: 1.667;
-		margin: 0px 0px 81px 0px;
+		margin: 0px 0px 40px 0px;
+		& a {
+			text-decoration: underline;
+		}
 	}
 }

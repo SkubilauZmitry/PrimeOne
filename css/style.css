@@ -519,49 +519,78 @@ h6 {
 }
 
 /*columns*/
-.columns-content {
-  padding: 75px 0px;
+.columns {
+  padding: 75px 0px 40px 0px;
 }
-.columns-content__row {
+@media (max-width: 47.99875em) {
+  .columns {
+    padding: 40px 0px 40px 0px;
+  }
+}
+.columns__column {
+  flex: 0 1 25%;
   display: flex;
 }
-.columns-content__body {
-  flex: 0 1 25%;
+@media (max-width: 47.99875em) {
+  .columns__column {
+    flex-wrap: wrap;
+  }
 }
-.columns-content__body-column {
-  max-height: 100%;
+.columns__item {
   display: flex;
   flex-direction: column;
 }
-.columns-content__title {
+@media (max-width: 47.99875em) {
+  .columns__item {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 480px) {
+  .columns__item {
+    flex: 1 1 100%;
+  }
+}
+.columns__title {
   font-size: 25px;
   font-family: "Akzidenz-Grotesk-BQ";
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1;
   margin: 20px 0px 42px 0px;
-  padding: 0px 5px 0px 0px;
+  max-width: 170px;
 }
-.columns-content__text {
+@media (max-width: 47.99875em) {
+  .columns__title {
+    margin: 10px 0px 20px 0px;
+  }
+}
+.columns__text {
   font-size: 15px;
   color: rgb(0, 0, 0);
-  background-color: #dbe11b;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 10px 0px 0px;
   flex: 1 1 100%;
+  max-width: 170px;
 }
-.columns-content__button {
+@media (max-width: 47.99875em) {
+  .columns__text {
+    max-width: none;
+  }
+}
+.columns__button {
   font-size: 15px;
   font-family: "Bebas";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.667;
+  justify-content: flex-start;
+  display: flex;
+  margin: 15px 0px 15px 0px;
 }
-.columns-content__button-link {
-  margin: 30px 0px 30px 0px;
+.columns__button-link {
   background-color: #010101;
   padding: 5px 5px 5px 5px;
 }
-.columns-content__link {
+.columns__link {
   display: block;
   font-size: 15px;
   font-family: "Bebas";
@@ -569,5 +598,219 @@ h6 {
   text-decoration: underline;
   text-transform: uppercase;
   line-height: 1.667;
-  margin: 0px 0px 81px 0px;
+  margin: 0px 0px 40px 0px;
+}
+.columns__link a {
+  text-decoration: underline;
+}
+
+/*choose*/
+@media (max-width: 29.99875em) {
+  .choose {
+    margin: -20px 0px 0px 0px;
+  }
+}
+.choose__row {
+  display: flex;
+}
+.choose__title {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 50px;
+  min-height: 200px;
+  background-color: #000000;
+  font-family: "AkzidenzGroteskBQ";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.5;
+  text-align: right;
+}
+@media (max-width: 29.99875em) {
+  .choose__title {
+    font-size: 30px;
+    min-height: 100px;
+    margin: -20px 0px 0px 0px;
+  }
+}
+.choose__title-row {
+  margin: 0px 40px 0px 0px;
+}
+.choose__img {
+  flex: 0 1 50%;
+}
+@media (max-width: 61.99875em) {
+  .choose__image {
+    display: none;
+  }
+}
+
+/*block-item*/
+.block-item {
+  padding: 50px 0px 50px 0px;
+}
+.block-item__row {
+  background-color: #ebebeb;
+}
+.block-item__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-item__column-one {
+  flex: 0 1 50%;
+  display: flex;
+  margin: 0px 0px 50px 0px;
+}
+@media (max-width: 61.99875em) {
+  .block-item__column-one {
+    flex: 1 1 100%;
+  }
+}
+.block-item__column-two {
+  flex: 0 1 50%;
+  display: flex;
+  margin: 0px 0px 50px 0px;
+}
+@media (max-width: 61.99875em) {
+  .block-item__column-two {
+    flex: 1 1 100%;
+  }
+}
+.block-item__column-three {
+  flex: 0 1 50%;
+  display: flex;
+}
+@media (max-width: 61.99875em) {
+  .block-item__column-three {
+    flex: 1 1 100%;
+    margin: 0px 0px 50px 0px;
+  }
+}
+.block-item__column-four {
+  flex: 0 1 50%;
+  display: flex;
+}
+@media (max-width: 61.99875em) {
+  .block-item__column-four {
+    flex: 1 1 100%;
+  }
+}
+.block-item__body {
+  flex: 0 1 90%;
+  padding: 0px 10px 0px 16px;
+}
+.block-item__title {
+  margin: 0px 0px 28px 0px;
+  font-size: 22px;
+  font-family: "AkzidenzGroteskBQ";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.block-item__text {
+  font-size: 15px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  line-height: 1.667;
+}
+.block-item__block-img {
+  background-color: #000000;
+  width: 120px;
+  height: 100px;
+  display: flex;
+}
+
+.block-item__img {
+  margin: 20px auto;
+  max-width: 65%;
+  max-height: 65%;
+}
+
+/*block-inform*/
+.block-inform {
+  padding: 82px 0px 25px 0px;
+}
+.block-inform__title {
+  font-size: 50px;
+  font-family: "AkzidenzGroteskBQ";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.5;
+  text-align: left;
+  margin: 0px 0px 35px 0px;
+}
+.block-inform__columns {
+  display: flex;
+  position: relative;
+  padding: 0px 0px 0px 35px;
+}
+@media (max-width: 47.99875em) {
+  .block-inform__columns {
+    flex-wrap: wrap;
+  }
+}
+.block-inform__column-left {
+  flex: 0 1 50%;
+  margin: 0px 5px 0px 0px;
+}
+@media (max-width: 47.99875em) {
+  .block-inform__column-left {
+    flex: 1 1 100%;
+  }
+}
+.block-inform__text {
+  font-size: 15px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  line-height: 1.667;
+  margin: 0px 0px 30px 0px;
+}
+.block-inform__text_message-- {
+  margin: 0px 0px 30px 35px;
+}
+.block-inform__text:nth-last-child(1) {
+  margin: 0px 0px 0px 0px;
+}
+.block-inform__text_tx--::before {
+  content: "";
+  background: url("@img/block-icons/vv.png") 0px 0 no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.block-inform__text_message--::before {
+  content: "";
+  background: url("@img/block-icons/email.png") 0 2px no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.block-inform__text_tel--::before {
+  content: "";
+  background: url("@img/block-icons/telephone.png") 0 0 no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.block-inform__column-right {
+  flex: 0 0 50%;
+  position: relative;
+}
+@media (max-width: 47.99875em) {
+  .block-inform__column-right {
+    flex: 1 1 100%;
+    margin: 30px 0px 0px -30px;
+  }
+}
+.block-inform__link {
+  margin: 0px 33px 0px 0px;
+}
+.block-inform__link:last-child {
+  margin: 0px 0px 0px 0px;
 }

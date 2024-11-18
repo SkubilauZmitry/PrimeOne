@@ -522,7 +522,7 @@ h6 {
 .columns {
   padding: 75px 0px 40px 0px;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 47.99875em) {
   .columns {
     padding: 40px 0px 40px 0px;
   }
@@ -531,7 +531,7 @@ h6 {
   flex: 0 1 25%;
   display: flex;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 47.99875em) {
   .columns__column {
     flex-wrap: wrap;
   }
@@ -540,7 +540,7 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 47.99875em) {
   .columns__item {
     flex: 0 1 50%;
   }
@@ -603,4 +603,24 @@ h6 {
 }
 .columns__link a {
   text-decoration: underline;
+}
+
+/*choose*/
+.choose__row {
+  display: flex;
+}
+.choose__title {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: #000000;
+  font-family: "AkzidenzGroteskBQ";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.5;
+}
+.choose__img {
+  flex: 0 1 50%;
 }

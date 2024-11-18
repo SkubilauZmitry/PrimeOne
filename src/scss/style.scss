@@ -164,8 +164,8 @@ body {
 // Підключення стилів окремих сторінок
 @import "home";
 
-.page {
-}
+// .page {
+// }
 
 /*SLIDER*/
 .slider {
@@ -245,23 +245,14 @@ body {
 /*columns*/
 .columns {
 	padding: 75px 0px 40px 0px;
-	@media (max-width: $tablet) {
+	@media (max-width: $mobile) {
 		padding: 40px 0px 40px 0px;
-	}
-
-	&__container {
-	}
-
-	&__body {
-	}
-
-	&__row {
 	}
 
 	&__column {
 		flex: 0 1 25%;
 		display: flex;
-		@media (max-width: $tablet) {
+		@media (max-width: $mobile) {
 			flex-wrap: wrap;
 		}
 	}
@@ -269,15 +260,12 @@ body {
 	&__item {
 		display: flex;
 		flex-direction: column;
-		@media (max-width: $tablet) {
+		@media (max-width: $mobile) {
 			flex: 0 1 50%;
 		}
 		@media (max-width: 480px) {
 			flex: 1 1 100%;
 		}
-	}
-
-	&__img {
 	}
 
 	&__title {
@@ -312,7 +300,6 @@ body {
 		line-height: 1.667;
 		justify-content: flex-start;
 		display: flex;
-		margin: 30px 0px 30px 0px;
 		margin: 15px 0px 15px 0px;
 	}
 
@@ -332,6 +319,214 @@ body {
 		margin: 0px 0px 40px 0px;
 		& a {
 			text-decoration: underline;
+		}
+	}
+}
+
+/*choose*/
+.choose {
+	@media (max-width: $mobileSmall) {
+		margin: -20px 0px 0px 0px;
+	}
+	&__row {
+		display: flex;
+	}
+
+	&__title {
+		flex: 1 0 50%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 50px;
+		min-height: 200px;
+		background-color: #000000;
+		font-family: "AkzidenzGroteskBQ";
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+		line-height: 0.5;
+		text-align: right;
+
+		@media (max-width: $mobileSmall) {
+			font-size: 30px;
+			min-height: 100px;
+			margin: -20px 0px 0px 0px;
+		}
+	}
+	&__title-row {
+		margin: 0px 40px 0px 0px;
+	}
+	&__img {
+		flex: 0 1 50%;
+	}
+	&__image {
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+}
+/*block-item*/
+.block-item {
+	padding: 50px 0px 50px 0px;
+	&__row {
+		background-color: #ebebeb;
+	}
+
+	&__columns {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column-one {
+		flex: 0 1 50%;
+		display: flex;
+		margin: 0px 0px 50px 0px;
+		@media (max-width: $tablet) {
+			flex: 1 1 100%;
+		}
+	}
+	&__column-two {
+		flex: 0 1 50%;
+		display: flex;
+		margin: 0px 0px 50px 0px;
+		@media (max-width: $tablet) {
+			flex: 1 1 100%;
+		}
+	}
+	&__column-three {
+		flex: 0 1 50%;
+		display: flex;
+		@media (max-width: $tablet) {
+			flex: 1 1 100%;
+			margin: 0px 0px 50px 0px;
+		}
+	}
+	&__column-four {
+		flex: 0 1 50%;
+		display: flex;
+		@media (max-width: $tablet) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__body {
+		flex: 0 1 90%;
+		padding: 0px 10px 0px 16px;
+	}
+
+	&__title {
+		margin: 0px 0px 28px 0px;
+		font-size: 22px;
+		font-family: "AkzidenzGroteskBQ";
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+		line-height: 1;
+	}
+
+	&__text {
+		font-size: 15px;
+		font-family: "PTSans";
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+	}
+
+	&__block-img {
+		background-color: #000000;
+		width: 120px;
+		height: 100px;
+		display: flex;
+	}
+}
+.block-item__img {
+	margin: 20px auto;
+	max-width: 65%;
+	max-height: 65%;
+}
+
+/*block-inform*/
+
+.block-inform {
+	padding: 82px 0px 25px 0px;
+
+	&__title {
+		font-size: 50px;
+		font-family: "AkzidenzGroteskBQ";
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+		line-height: 0.5;
+		text-align: left;
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__columns {
+		display: flex;
+		position: relative;
+		padding: 0px 0px 0px 35px;
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__column-left {
+		flex: 0 1 50%;
+		margin: 0px 5px 0px 0px;
+		@media (max-width: $mobile) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		font-family: "PTSans";
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+		margin: 0px 0px 30px 0px;
+		&_message-- {
+			margin: 0px 0px 30px 35px;
+		}
+		&:nth-last-child(1) {
+			margin: 0px 0px 0px 0px;
+		}
+		&_tx--::before {
+			content: "";
+			background: url("@img/block-icons/vv.png") 0px 0 no-repeat;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&_message--::before {
+			content: "";
+			background: url("@img/block-icons/email.png") 0 2px no-repeat;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&_tel--::before {
+			content: "";
+			background: url("@img/block-icons/telephone.png") 0 0 no-repeat;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__column-right {
+		flex: 0 0 50%;
+		position: relative;
+		@media (max-width: $mobile) {
+			flex: 1 1 100%;
+			margin: 30px 0px 0px -30px;
+		}
+	}
+
+	&__link {
+		margin: 0px 33px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
 		}
 	}
 }

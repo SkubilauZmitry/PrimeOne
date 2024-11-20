@@ -257,6 +257,49 @@
             </div>
           </div>
         </div>
+        <!-- contacts -->
+        <div class="contacts">
+          <div class="contacts__row">
+            <div class="contacts__image">
+              <img
+                class="contacts__map ibg"
+                src="@img/contact/Layer 2.png"
+                alt="Image"
+              />
+            </div>
+
+            <div class="contacts__forms">
+              <div class="contacts__title">Get in touch</div>
+              <form action="#" method="post" class="contacts__form" name="form">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  name="name"
+                  data-error="error"
+                  placeholder="Name"
+                  class="contacts__form-name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  data-error="error"
+                  class="contacts__form-email"
+                  placeholder="Email or phone number"
+                />
+                <textarea
+                  name="textarea"
+                  class="contacts__form-textarea"
+                  placeholder="Your message"
+                ></textarea>
+                <input
+                  type="submit"
+                  value="send message"
+                  class="contacts__form-button"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
       </main>
       @@include('html/_footer.htm',{})
     </div>

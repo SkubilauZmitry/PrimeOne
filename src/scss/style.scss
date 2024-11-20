@@ -416,7 +416,7 @@ body {
 	&__title {
 		margin: 0px 0px 28px 0px;
 		font-size: 22px;
-		font-family: "AkzidenzGroteskBQ";
+		font-family: "Akzidenz-Grotesk-BQ";
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
 		line-height: 1;
@@ -424,7 +424,6 @@ body {
 
 	&__text {
 		font-size: 15px;
-		font-family: "PTSans";
 		color: rgb(0, 0, 0);
 		line-height: 1.667;
 	}
@@ -449,7 +448,7 @@ body {
 
 	&__title {
 		font-size: 50px;
-		font-family: "AkzidenzGroteskBQ";
+		font-family: "Akzidenz-Grotesk-BQ";
 		color: rgb(0, 0, 0);
 		text-transform: uppercase;
 		line-height: 0.5;
@@ -476,7 +475,6 @@ body {
 
 	&__text {
 		font-size: 15px;
-		font-family: "PTSans";
 		color: rgb(0, 0, 0);
 		line-height: 1.667;
 		margin: 0px 0px 30px 0px;
@@ -515,7 +513,7 @@ body {
 	}
 
 	&__column-right {
-		flex: 0 0 50%;
+		flex: 0 1 50%;
 		position: relative;
 		@media (max-width: $mobile) {
 			flex: 1 1 100%;
@@ -528,5 +526,99 @@ body {
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
+	}
+}
+/*contacts*/
+.contacts {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__title {
+		font-size: 25px;
+		font-family: "Akzidenz-Grotesk-BQ";
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0px 0px 25px 0px;
+	}
+	&__image {
+		flex: 0 1 50%;
+		@media (max-width: $mobile) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__forms {
+		padding: 55px 0px 55px 60px;
+		flex: 0 1 50%;
+		background-color: #000000;
+		@media (max-width: $pc) {
+			padding: 35px 10px 35px 30px;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 100%;
+			color: #cf2323;
+		}
+	}
+
+	&__form-name {
+		border: 3px solid rgb(149, 149, 149);
+		max-width: 378px;
+		height: 50px;
+		background-color: #252525;
+		color: #ebebeb;
+
+		&::placeholder {
+			font-size: 15px;
+			color: rgb(149, 149, 149);
+			line-height: 1.667;
+			padding: 20px 20px 20px 20px;
+			background-color: #252525;
+		}
+	}
+
+	&__form-email {
+		border: 3px solid rgb(149, 149, 149);
+		max-width: 378px;
+		height: 50px;
+		color: #ebebeb;
+		background-color: #252525;
+		margin: 25px 0px 25px 0px;
+		&::placeholder {
+			font-size: 15px;
+			color: rgb(149, 149, 149);
+			line-height: 1.667;
+			padding: 20px 20px 20px 20px;
+			background-color: #252525;
+		}
+	}
+
+	&__form-textarea {
+		border: 3px solid rgb(149, 149, 149);
+		max-width: 378px;
+		min-height: 107px;
+		background-color: #252525;
+		color: #ebebeb;
+		margin: 0px 0px 25px 0px;
+		&::placeholder {
+			font-size: 15px;
+			color: rgb(149, 149, 149);
+			line-height: 1.667;
+			padding: 20px 20px 20px 20px;
+			background-color: #252525;
+		}
+	}
+
+	&__form-button {
+		display: block;
+		color: #000000;
+		font-size: 15px;
+		line-height: 1.667;
+		font-weight: 500;
+		text-transform: uppercase;
+		background-color: #fff;
+		max-width: 160px;
+		padding: 5px 0px 5px 0px;
 	}
 }

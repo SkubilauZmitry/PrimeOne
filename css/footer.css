@@ -1,0 +1,16 @@
+.footer__row {
+  display: flex;
+}
+.footer__text {
+  padding: 56px 0px 52px 0px;
+  flex: 0 1 50%;
+  text-align: center;
+}
+.footer__logo {
+  padding: 43px 0px 44px 0px;
+  flex: 1 1 50%;
+}
+.footer__logo img {
+  display: block;
+  margin: 0px auto;
+}
